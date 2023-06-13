@@ -1,0 +1,8 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule ^register$ register.php [NC,L]
+RewriteRule ^login$ login.php [NC,L]
+RewriteRule ^getuser$ getuser.php [NC,L]
+
+
+RewriteRule ^read/([0-9_-]*)$ read.php?id=$1 [NC,L]
+RewriteRule ^delete$ delete.php [NC,L]
